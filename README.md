@@ -1,5 +1,6 @@
 
 ## Steps to start the 1BaseTailwindFlowbite project
+```
 cd 1BaseTailwindFlowbite/
 python3 -m venv .venv
 source .venv/bin/activate
@@ -7,11 +8,14 @@ pip install -r requirements.txt
 cd proj/
 python3 manage.py migrate
 python3 manage.py tailwind install
-
+```
 > **Note**  first start the tailwind process for the static folder to be generated
+```
 python3 manage.py tailwind start
+```
+```
 python3 manage.py runserver
-
+```
 
 ## step 3  install Flowbite 
 
