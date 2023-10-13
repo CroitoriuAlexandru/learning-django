@@ -1,0 +1,36 @@
+# install python and django
+sudo apt install python3-pip                        -- to install python
+sudo apt install python3-django                     -- to install django
+
+# create a django project
+django-admin startproject demo                      -- initiate project
+pip install django                                  -- install django
+# FILES GENERATED :
+_init_.py                                           -- special file that tels pytho to treet this file like a python package
+
+# create a django app inside project
+python3 manage.py startapp myapp                    -- initiate app
+
+python3 -m venv .venv                               -- create virtual enviroment
+# start django server
+python3 manage.py runserver                         -- start server
+
+
+source venvName/bin/activate                        -- activate the enviroment
+
+python3 manage.py makemigrations                    -- create migration files
+python3 manage.py migrate                           -- apply migration files
+
+python3 manage.py createsuperuser                   -- create super user
+
+
+# python tests
+pytest                                             -- run tests
+pytest --cov                                      -- run tests with coverage
+pytest --cov-report html --cov=./                 -- run tests with coverage and generate html report
+
+
+# create a django project secret key
+from django.core.management.utils import get_random_secret_key
+secret_key = get_random_secret_key()
+print(secret_key)
