@@ -2,15 +2,31 @@
 
 ## step 3  install Flowbite 
 
-cd ./proj/theme/static_src npm install flowbite
-
----- aditional settings tailwind config ---- darkMode: 'class', content: [ "./node_modules/flowbite/**/*.js", ], plugins: [ require('flowbite/plugin') ],
-
----- set static files directories in settings.py ---- STATICFILES_DIRS = [ BASE_DIR / "theme/static", "theme/static_src/node_modules/flowbite/dist", ]
-
----- add script in base.html ----
-
+> **Note**  install flowbite in npm
+```
+cd ./proj/theme/static_src 
+npm install flowbite
+```
+> **Note**  aditional settings tailwind config  
+```
+darkMode: 'class', 
+content: [ 
+	"./node_modules/flowbite/**/*.js",
+	], 
+plugins: [ 
+	require('flowbite/plugin')
+],
+```
+> **Note** set static files directories in settings.py 
+```
+STATICFILES_DIRS = [ 
+	BASE_DIR / "theme/static", "theme/static_src/node_modules/flowbite/dist", 
+]
+```
+> **Note** add script in base.html 
+```
 <script src="{% static 'flowbite.min.js' %}"></script>
+```
 
 ## step 2 django-tailwind
 ```
