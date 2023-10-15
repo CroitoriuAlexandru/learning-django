@@ -1,7 +1,5 @@
 ## ToDos
 
-add django-debug-toolbar in 1BaseTailwindFlowbite project
-
 cd 2ChatApp/
 source .venv/bin/activate
 cd proj/
